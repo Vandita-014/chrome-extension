@@ -413,7 +413,7 @@ class ExtractionIndicator {
     // Create shadow DOM container
     this.container = document.createElement('div');
     this.container.id = 'ac-extractor-indicator';
-    this.container.style.cssText = 'position: fixed; top: 20px; right: 20px; z-index: 10000;';
+    this.container.style.cssText = 'position: fixed; top: 20px; left: 20px; z-index: 10000;';
     document.body.appendChild(this.container);
 
     this.shadowRoot = this.container.attachShadow({ mode: 'open' });
