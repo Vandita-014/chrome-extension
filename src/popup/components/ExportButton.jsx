@@ -22,11 +22,9 @@ function ExportButton({ data }) {
       return;
     }
 
-    // Get headers from first item
     const headers = Object.keys(items[0]);
     const csvRows = [headers.join(',')];
 
-    // Add data rows
     items.forEach(item => {
       const values = headers.map(header => {
         const value = item[header];

@@ -1,9 +1,3 @@
-// Content Script for ActiveCampaign CRM Data Extraction
-// DOM Selection Strategy: We use CSS selectors with data attributes and class names
-// combined with querySelector for reliable extraction. We handle dynamic content
-// by using MutationObserver and waiting for elements to appear.
-
-// Storage utilities
 const StorageUtils = {
   async getData() {
     return new Promise((resolve) => {
